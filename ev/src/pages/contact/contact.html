@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      charger Info
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+   <ion-card  *ngFor="let charger of chargers">
+    <ion-card-header>
+    </ion-card-header>
+
+    <ion-list>
+      <button ion-item>
+        <ion-icon name="bus"  item-start></ion-icon>
+        {{charger.Dealer}}
+        <p> Price: {{charger.oneWay}} INR</p>
+      </button>
+      <br>
+      <br>
+      <b><p>Address: {{charger.Address}}</p></b>
+    </ion-list>
+  </ion-card>
+  <button ion-button (click)="payment()">Route</button> 
+</ion-content>

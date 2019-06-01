@@ -1,0 +1,7 @@
+{
+  "name": "charger",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

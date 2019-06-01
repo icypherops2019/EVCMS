@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Direction
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating>Starting Point</ion-label>
+    <ion-input type="text"   [(ngModel)]="startpt"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Choose Destination</ion-label>
+    <ion-input type="text"   [(ngModel)]="finalpt"></ion-input>
+  </ion-item>
+<br>
+<br>
+  <button ion-button  color="secondary" (click)="submit()" block>Submit</button>
+</ion-content>
