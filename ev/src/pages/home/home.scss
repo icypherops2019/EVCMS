@@ -1,2 +1,23 @@
 page-home {
 }
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+td{
+    height: 15px;
+    vertical-align: bottom;
+}
+tr{
+    border-width: 1px;
+    border-color: #888;
+    border-style: solid;
+}
+
+table{
+    width: 100%;
+    max-height: 100px;
+    overflow: scroll;
+}

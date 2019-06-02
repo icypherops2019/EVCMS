@@ -4,6 +4,24 @@
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 -->
+<div id="info" style="padding:5px;position: absolute; z-index: 100;top:-100px; left:0;min-width: 150px; min-height: 100px; background-color: white;">
+  <p>Dealer : {{selected_station.dealer}}</p>
+  <p> : {{selected_station.dealer}}</p>
+  <table *ngIf="selected_station.data!=null">
+      <tr><th>Type</th><th>Total</th><th>Occupied</th></tr>
+      <tr><td>Wall</td><td>{{selected_station.data?.wall}}</td><td>{{selected_station.data['wall-a']}}</td></tr>
+      <tr><td>CHAdeMO</td><td>{{selected_station.data['CHAdeMO']}}</td><td>{{selected_station.data['CHAdeMO-a']}}</td></tr>
+      <tr><td>Tesla(roadster)</td><td>{{selected_station.data['Tesla(roadster)']}}</td><td>{{selected_station.data['Tesla(roadster)-a']}}</td></tr>
+      <tr><td>NEMA 14-50</td><td>{{selected_station.data['NEMA 14-50']}}</td><td>{{selected_station.data['NEMA 14-50-a']}}</td></tr>
+      <tr><td>Tesla</td><td>{{selected_station.data['Tesla']}}</td><td>{{selected_station.data['Tesla-a']}}</td></tr>
+      <tr><td>Type-2</td><td>{{selected_station.data['Type-2']}}</td><td>{{selected_station.data['Type-2-a']}}</td></tr>
+      <tr><td>Type-3</td><td>{{selected_station.data['Type-3']}}</td><td>{{selected_station.data['Type-3-a']}}</td></tr>
+  </table>
+</div>
+<div style="position: fixed; top:50px; left:50px; z-index: 99;">
+  <input type="number" id="lat_var" value="0.0710858315348375">
+  <input type="number" id="long_var" value="0.06729125976561079">
+</div>
 <ion-header>
 
   <ion-navbar>
